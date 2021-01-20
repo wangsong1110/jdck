@@ -1,0 +1,21 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: jdck-information-data-sync
+  datasource:
+      url: jdbc:sqlserver://39.104.184.19:1433;DatabaseName=DB_DZGL_SX
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      username: sa
+      password: jdck+123456
+  rabbitmq:
+    mq1:
+      host:  192.168.1.119
+      port:  5672
+      username: jdck
+      password: jdck@123456
+    listener:
+      queues: SY-202001,XY-202002
+  logging:
+    congfig: classpath:logback-spring.xml
+    path: D:/jdck/information-sync-logs
