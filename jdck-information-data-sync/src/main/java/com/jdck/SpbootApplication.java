@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableConfigurationProperties
 public class SpbootApplication {
-
+// test gonggong
 	public static void main(String[] args) {
 		SpringApplication.run(SpbootApplication.class, args);
 	}
